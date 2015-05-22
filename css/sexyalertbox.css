@@ -1,0 +1,51 @@
+#SexyAlertBox-Box {
+  padding-bottom: 24px;
+  background: url('../images/bg-box-bottom.png') bottom left no-repeat !important;
+}
+
+#SexyAlertBox-InBox {
+  padding-top: 15px;
+  background: url('../images/bg-box-top.png') top left no-repeat !important;	
+}
+
+#SexyAlertBox-BoxContent {
+  background: url('../images/bg-box-body.png') top left repeat-y !important;
+  padding: 0px 20px;
+}
+
+#SexyAlertBox-BoxContenedor {
+  padding: 0px 0px 5px 55px;
+  text-align: left;
+  font-family:Verdana;
+  font-size:12px;
+  color:#000;
+}
+
+#SexyAlertBox-BoxContenedor h1,#SexyAlertBox-BoxContenedor h2,#SexyAlertBox-BoxContenedor h3,#SexyAlertBox-BoxContenedor b,#SexyAlertBox-BoxContenedor strong{
+  text-align: left;
+  font-family:Verdana;
+  font-size:12px;
+  color:#000;
+  font-weight:bold;
+  margin:0px;
+  padding:0px;
+}
+
+#SexyAlertBox-Buttons{
+  text-align:right;
+}
+
+#SexyAlertBox-Box .BoxAlert {
+  background: url('../images/dialog-alert.png') top left no-repeat;
+}
+
+#SexyAlertBox-Box .BoxInfo {
+  background: url('../images/dialog-info.png') top left no-repeat;
+}
+
+#SexyAlertBox-Box .BoxError {
+  background: url('../images/dialog-error.png') top left no-repeat;
+}
+#SexyAlertBox-Box .BoxHelp {
+  background: url('../images/dialog-help.png') top left no-repeat;
+}
