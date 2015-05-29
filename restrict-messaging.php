@@ -244,7 +244,7 @@ function namefield() {
 
 namefield();
 
-jQuery("button.btn-warning:contains(<?php echo $CORE->_e(array('account','34')); ?>)").click(function(e) {
+jQuery("button.btn-warning:contains(<?php echo $CORE->_e(array('account','34')); ?>), .btn-primary:contains(<?php echo $CORE->_e(array('account','6')); ?>)").click(function(e) {
 namefield();
 	if(!sendToID) 
 	{
