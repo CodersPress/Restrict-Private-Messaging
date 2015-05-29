@@ -3,8 +3,8 @@
 Plugin Name: Restrict Private Messaging
 Plugin URI: http://coderspress.com/forum/restrict-private-messaging
 Description: Restricts private messaging through membership levels.
-Version: 2015.0527
-Updated: 27th March 2015
+Version: 2015.0529
+Updated: 29th March 2015
 Author: sMarty 
 Author URI: http://coderspress.com
 License:
@@ -197,7 +197,7 @@ jQuery(document).ready(function () {
 </div>
 <? } 
 add_action( "wp_footer", "da_restrict");
-function da_restrict(){
+function da_restrict(){ global $CORE;
 if ( is_page_template( 'tpl-account.php' ) )
 	{
 
@@ -244,16 +244,14 @@ function namefield() {
 
 namefield();
 
-//var int=self.setInterval(namefield, 5000);
-
-jQuery('button.btn:nth-child(11), a.btn:nth-child(1)').click(function(e) {
+jQuery("button.btn-warning:contains(<?php echo $CORE->_e(array('account','34')); ?>)").click(function(e) {
 namefield();
 	if(!sendToID) 
 	{
 		sendToID = myPackageID; 
 	}
 
-	if ( !is_admin() && !myPackageID || myPackageID <?php echo get_option("restrict_messaging_priceStructure");?> sendToID) 
+	if ( !myPackageID || myPackageID <?php echo get_option("restrict_messaging_priceStructure");?> sendToID) 
 		{
 			e.preventDefault();
 			Sexy.<?php echo get_option("restrict_messaging_alert_box");?>('<h1><?php echo get_option("restrict_messaging_alert_title");?></h1><em><?php echo get_option("restrict_messaging_alert_subtitle");?></em><br/><p><?php $message = get_option("restrict_messaging_alert_message"); $message = str_replace(array("\r","\n"),"",$message); echo $message;?></p>');
