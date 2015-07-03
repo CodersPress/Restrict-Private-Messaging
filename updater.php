@@ -53,7 +53,7 @@ class WP_RM_UPDATER {
 	 *
 	 * @uncomment bool overrule or not
 	 */
-    // defined( 'WP_FORCE_UPDATE', true )
+    //    define( 'WP_FORCE_UPDATE', true );
 	public function overrule_transients() {
 		return ( defined( 'WP_FORCE_UPDATE' ) && WP_FORCE_UPDATE );
 	}
