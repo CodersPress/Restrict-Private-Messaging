@@ -3,11 +3,13 @@
 Plugin Name: Restrict Private Messaging
 Plugin URI: http://coderspress.com/forum/restrict-private-messaging
 Description: Restricts private messaging through membership levels.
-Version: 2015.0529
-Updated: 29th March 2015
+Version: 2015.0729
+Updated: 29th July 2015
 Author: sMarty 
 Author URI: http://coderspress.com
-License:
+WP_Requires: 3.8.1
+WP_Compatible: 4.2.3
+License: http://creativecommons.org/licenses/GPL/2.0
 */
 add_action( 'init', 'rm_plugin_updater' );
 function rm_plugin_updater() {
